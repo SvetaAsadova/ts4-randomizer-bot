@@ -17,6 +17,7 @@ func main() {
 	updates := bot.GetUpdatesChan(u)
 	events := []string{
 		"Смените работу",
+		"Включи случайную смерть в соседских историях на всех на 1 игровую неделю",
 		"Пригласите сима на свидание",
 	}
 	homeAppliances := []string{
