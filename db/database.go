@@ -10,7 +10,7 @@ import (
 
 // Open открывает базу данных SQLite и применяет миграции.
 func Open(dsn string) (*sql.DB, error) {
-	db, err := sql.Open("sqlite3", dsn)
+	db, err := sql.Open("sqlite", dsn)
 	if err != nil {
 		return nil, fmt.Errorf("open database: %w", err)
 	}
