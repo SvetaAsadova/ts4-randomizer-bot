@@ -6,7 +6,7 @@ type Event struct {
 	Category    string `json:"category"`
 	Title       string `json:"title"`
 	Description string `json:"description"`
-	Variables   string `json:"variables"`
+	Variables   *string `json:"variables"`
 	DLC         sqlNullString
 	Impact      int    `json:"impact"`
 	CreatedAt   string `json:"created_at"`
