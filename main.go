@@ -63,6 +63,7 @@ func main() {
 		} else {
 			msg.Text = "Я не понимаю эту команду."
 		}
+		msg.ParseMode = tgbotapi.ModeHTML
 		if _, err := bot.Send(msg); err != nil {
 			log.Println(err)
 		}

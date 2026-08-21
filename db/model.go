@@ -18,12 +18,12 @@ type sqlNullString struct {
 	Valid bool
 }
 
-// FormatAsCard возвращает строку для Telegram с форматированием карточки:
-// **заголовок**
+// FormatAsCard возвращает строку для Telegram с HTML-форматированием:
+// <b>заголовок</b>
 //
 // описание
 func (e Event) FormatAsCard() string {
-	result := "**" + e.Title + "**"
+	result := "<b>" + e.Title + "</b>"
 	if e.Description != "" {
 		result += "\n\n" + e.Description
 	}

@@ -1,0 +1,12 @@
+# Не копировать в контейнер
+data/
+logs/
+backups/
+.env
+*.exe
+*.db
+.git/
+*.log
+*.tmp
+.idea/
+.vscode/
